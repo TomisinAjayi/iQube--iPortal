@@ -1,13 +1,198 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to bottom right, rgba(242, 201, 76, 0.2) 70%, #fff 30%);
+    background-repeat: no-repeat;
+}
+/* main design  */
+.container {
+    padding: 0;
+}
+.heading {
+    color: #4e598c;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-top: 54px;
+}
+.list {
+    position: relative;
+    display: block;
+    list-style-type: none;
+    font-size: 25px;
+    margin-right: 83px;
+}
+.list a {
+    color: #bdbdbd;
+    text-decoration: none;
+    font-weight: bold;
+}
+.activeLink a {
+    color: orange;
+}
+.content {
+    width: 55%;
+    margin: 185px auto;
+}
+/* home design  */
+form {
+    margin-top: 105px;
+}
+.form-group {
+    margin-bottom: 1rem;
+    margin-top: 53px;
+}
+label {
+    font-weight: bold;
+    font-size: 19px;
+}
+.form-control {
+    padding: 1rem 1.75rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.redAsterick {
+    color: red;
+}
+small {
+    margin-bottom: 1rem;
+}
+#nextBtn {
+    background-color: #f2af4b;
+    color: white;
+    font-weight: bold;
+    padding: 18px;
+    width: 83%;
+    border: 1px solid #f2af4b;
+}
+a.form-control.cancel {
+    border: 0;
+    background-color: transparent;
+    color: #4e598c;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0;
+    text-decoration: none;
+}
+a.form-control.cancel:hover {
+    color: #4e598c;
+}
+select#cardtype {
+    color: #758489;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-top: 10px;
+}
+::placeholder {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* bill and payment design  */
+.cardForm {
+    display: block;
+}
+hr {
+    border-top: 1px solid black;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: calc(3.25rem + 2px);
+}
+.paymentSection {
+    display: block;
+    margin-top: 66px;
+}
+.table {
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 10px 15px rgba(33, 30, 67, 0.08);
+}
+thead {
+    background-color: #2f80ed;
+    color: white;
+    border-radius: 10px;
+}
+.table th {
+    padding: 26px 88px;
+    font-size: 20px;
+}
+.table td {
+    border-top: 0;
+    padding: 26px 88px;
+    font-size: 20px;
+    color: #2f80ed;
+}
+.table .zero {
+    color: black;
+    padding-left: 136px;
+}
+.horizontal {
+    border-top: 1px solid #dee2e6;
+}
+/* confirm payment design  */
+.confirmSection {
+    background-color: white;
+    box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+    border-radius: 10px;
+    padding: 0 150px;
+    font-family: Product Sans;
+    padding-top: 67px;
+    padding-bottom: 99px;
+}
+h2 {
+    margin-top: 15px;
+    color: #4e598c;
+    font-weight: 700;
+    font-size: 48px;
+}
+.confirmSection div {
+    background-color: white;
+    width: 84px;
+    height: 84px;
+    margin: 0 auto;
+    border-radius: 56px;
+    box-shadow: 0px 6px 10px rgba(33, 30, 67, 0.08);
+}
+.confirmSection div i {
+    color: #6FCF97;
+    font-size: 50px;
+    margin: 17.83px 19px;
+}
+.confirmSection p {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.confirmSection .return {
+    margin-top: 38px;
+    color: #f2af4b;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration-line: underline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* responsiveness */
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 32px;
+    }
+    .content {
+        width: 100%;
+    }
+    .cdd {
+        flex: 0%;
+        max-width: 100%;
+    }
+    .ex {
+        flex: 0%;
+        max-width: 50%;
+    }
+    .confirmSection {
+        padding: 23px;
+    }
+    h2 {
+        font-size: 42px;
+    }
 }
